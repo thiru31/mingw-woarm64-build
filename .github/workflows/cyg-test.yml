@@ -1,6 +1,10 @@
 name: Build toolchain variants
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
   workflow_dispatch:
     inputs:
       binutils_branch:
@@ -98,7 +102,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        arch: [aarch64, x86_64]
+        arch: [aarch64]
         platform: [pc-cygwin]
         crt: [msvcrt, ucrt, libc]
         exclude:
