@@ -1,6 +1,10 @@
 name: Build toolchain variants
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
   workflow_dispatch:
     inputs:
       binutils_branch:
