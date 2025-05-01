@@ -1,4 +1,4 @@
-name: Build toolchain variants
+name: thiru
 
 on:
   push:
