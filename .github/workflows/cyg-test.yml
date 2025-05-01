@@ -3,7 +3,7 @@ name: thiru
 on:
   push:
     branches:
-      - main
+      - action
   pull_request:
   workflow_dispatch:
     inputs:
